@@ -2,12 +2,6 @@
 <!DOCTYPE html>
 <html>
     <body>
-
-        <form action="php_fileuploader.php" method="post" enctype="multipart/form-data">
-            Select item to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload" name="submit">
-        </form>
         
         <form action="php_fileuploader2.php" method="post" enctype="multipart/form-data">
             Select item to upload:
