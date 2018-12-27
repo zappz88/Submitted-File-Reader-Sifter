@@ -22,10 +22,12 @@ if (isset($_FILES['fileToUpload3'])) {
             if ($file_size <= 2097152) {
                 $myfile = fopen($file_tmp, "r") or die("Unable to open file!");
                 if ($myfile) {
+                    $count = 0;
                     while (($buffer = fgets($myfile)) !== false) {
                         $exploded = explode(".", $buffer);
-                        if (count($exploded) < 2) {
-                            echo "Line error";
+                        if (count($exploded) != 2) {
+                            $count += 1;
+                            echo "Line error/Data missing $count" . "<br>";
                         } else {
                             $servername = "";
                             $username = "";
