@@ -1,2 +1,2 @@
-# Submitted-File-Reader-Sifter
-PHP programs read and take submitted files and breaks on requested character to split into array.
+# Data File Submission System
+PHP program to upload, sift, and download text and xml documents.
